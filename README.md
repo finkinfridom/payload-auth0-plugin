@@ -34,7 +34,7 @@ app.use(auth(config));
 ### payload.config.ts
 
 ```js
-import {Avatar, LoginButton, LogoutButton} from "payload-auth0-plugin";
+import { Avatar, LoginButton, LogoutButton } from "payload-auth0-plugin";
 
 export default buildConfig({
     ....
