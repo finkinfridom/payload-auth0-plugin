@@ -78,5 +78,41 @@ describe("Auth0Strategy", () => {
         _strategy: "test-slug-auth0",
       });
     });
+    it("existing user should merge the two", async () => {
+      const req = {
+        oidc: {
+          user: {
+            id: "existing-oidc",
+            email: "existing@oidc.com",
+            picture: "http://my-avatar.com/void.gif",
+          },
+        },
+      } as unknown as Request;
+
+      const spyMerge = jest
+        .spyOn(strategy, "mergeUsers")
+        .mockImplementation(() => {
+          return { ...req["oidc"].user };
+        });
+      const spyFind = jest.spyOn(strategy.ctx, "find").mockResolvedValue({
+        docs: [
+          {
+            id: "existing-oidc",
+            full_name: "Test User",
+          },
+        ],
+      } as unknown as PaginatedDocs<any>);
+      await strategy.authenticate(req);
+      expect(spyFind).toBeCalledTimes(1);
+      expect(spyMerge).toBeCalledTimes(1);
+      expect(protoSuccessMock).toBeCalledWith({
+        id: "existing-oidc",
+        email: "existing@oidc.com",
+        full_name: "Test User",
+        picture: "http://my-avatar.com/void.gif",
+        collection: "test-slug",
+        _strategy: "test-slug-auth0",
+      });
+    });
   });
 });
