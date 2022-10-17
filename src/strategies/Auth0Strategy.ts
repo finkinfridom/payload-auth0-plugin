@@ -18,12 +18,16 @@ export class Auth0Strategy extends Strategy {
     this.slug = collectionSlug;
   }
 
+  createPassword(): string {
+    return Math.random().toString(36).slice(-8);
+  }
+
   createUser(oidcUser): Promise<any> {
     return this.ctx.create({
       collection: this.slug,
       data: {
         ...oidcUser,
-        password: Math.random().toString(36).slice(-8),
+        password: this.createPassword(),
       },
     });
   }
@@ -56,27 +60,29 @@ export class Auth0Strategy extends Strategy {
     user._strategy = `${this.slug}-${this.name}`;
     this.success(user);
   }
-  authenticate(req: Request, options?: any): void {
+  authenticate(req: Request, options?: any): any {
     // @ts-ignore
     if (req.oidc && req.oidc.user) {
       // @ts-ignore
       const oidcUser = { ...req.oidc.user };
       if (!oidcUser.email) {
-        this.error(new Error("email is empty"));
-        return;
+        const err = new Error("email is empty");
+        this.error(err);
+        return Promise.resolve(err);
       }
-      this.findUser(oidcUser).then((users) => {
-        if (users.docs && users.docs.length) {
-          const user = users.docs[0];
-          this.mergeUsers(user, oidcUser);
-          return;
+      return this.findUser(oidcUser).then((collection) => {
+        if (collection.docs && collection.docs.length) {
+          const doc = collection.docs[0];
+          this.mergeUsers(doc, oidcUser);
+          return Promise.resolve();
         }
-        this.createUser(oidcUser).then((doc) => {
+        return this.createUser(oidcUser).then((doc) => {
           this.successCallback(doc);
+          return Promise.resolve();
         });
       });
-      return;
     }
     this.success(req.user);
+    return Promise.resolve();
   }
 }

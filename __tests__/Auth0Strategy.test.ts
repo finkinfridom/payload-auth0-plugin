@@ -2,17 +2,20 @@ import { Auth0Strategy } from "../src/strategies/Auth0Strategy";
 import payload from "payload";
 import pino from "pino";
 import { Request } from "express";
-import { getConfigFileParsingDiagnostics } from "typescript";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
 jest.mock("payload");
 describe("Auth0Strategy", () => {
   let strategy: Auth0Strategy;
+  let protoSuccessMock;
+
   beforeAll(() => {
     payload.logger = pino();
     strategy = new Auth0Strategy(payload, "test-slug");
     Auth0Strategy.prototype.success = () => {};
     Auth0Strategy.prototype.error = () => {};
-    jest.spyOn(Auth0Strategy.prototype, "success").mockImplementation();
+    protoSuccessMock = jest
+      .spyOn(Auth0Strategy.prototype, "success")
+      .mockImplementation();
     jest.spyOn(Auth0Strategy.prototype, "error").mockImplementation();
     jest.spyOn(Math, "random").mockImplementation(() => 0.08531340799759524);
   });
@@ -35,7 +38,7 @@ describe("Auth0Strategy", () => {
       strategy.authenticate(req);
       expect(strategy.success).toBeCalledWith(req.user);
     });
-    it("invalid 'oidc' should return error", () => {
+    it("invalid 'oidc' should return error", async () => {
       const req = {
         oidc: {
           user: {
@@ -44,7 +47,7 @@ describe("Auth0Strategy", () => {
         },
       } as unknown as Request;
 
-      strategy.authenticate(req);
+      await strategy.authenticate(req);
       expect(strategy.error).toBeCalled();
     });
     it("non-existing user should create a new one", async () => {
@@ -57,16 +60,17 @@ describe("Auth0Strategy", () => {
         },
       } as unknown as Request;
 
-      jest.spyOn(strategy.ctx, "find").mockImplementation(() => {
-        return new Promise<PaginatedDocs<any>>((resolve) => {
-          resolve({ docs: [] } as unknown as PaginatedDocs<any>);
-        });
+      const spyCreate = jest.spyOn(strategy.ctx, "create").mockResolvedValue({
+        ...req["oidc"].user,
+        password: strategy.createPassword(),
       });
-      jest.spyOn(strategy.ctx, "create").mockResolvedValue({ created: 1 });
-      strategy.authenticate(req);
-      expect(strategy.ctx.find).toBeCalledTimes(1);
-      (await expect(strategy.ctx.create)).resolves.toEqual({ created: 1 });
-      expect(strategy.success).toBeCalledWith({
+      const spyFind = jest
+        .spyOn(strategy.ctx, "find")
+        .mockResolvedValue({ docs: [] } as unknown as PaginatedDocs<any>);
+      await strategy.authenticate(req);
+      expect(spyFind).toBeCalledTimes(1);
+      expect(spyCreate).toBeCalledTimes(1);
+      expect(protoSuccessMock).toBeCalledWith({
         id: "non-existing-oidc",
         email: "non-existing@oidc.com",
         password: "kdrjjwuo",
