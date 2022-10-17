@@ -42,25 +42,22 @@ export class Auth0Strategy extends Strategy {
     });
   }
 
-  mergeUsers(foundUser, oidcUser): void {
-    this.ctx
-      .update({
-        collection: this.slug,
-        id: foundUser.id,
-        data: {
-          ...oidcUser,
-        },
-      })
-      .then((doc) => {
-        this.successCallback(doc);
-      });
+  async mergeUsers(foundUser, oidcUser): Promise<void> {
+    const doc = await this.ctx.update({
+      collection: this.slug,
+      id: foundUser.id,
+      data: {
+        ...oidcUser,
+      },
+    });
+    this.successCallback(doc);
   }
   successCallback(user): void {
     user.collection = this.slug;
     user._strategy = `${this.slug}-${this.name}`;
     this.success(user);
   }
-  authenticate(req: Request, options?: any): any {
+  async authenticate(req: Request, options?: any): Promise<any> {
     // @ts-ignore
     if (req.oidc && req.oidc.user) {
       // @ts-ignore
@@ -70,19 +67,16 @@ export class Auth0Strategy extends Strategy {
         this.error(err);
         return Promise.resolve(err);
       }
-      return this.findUser(oidcUser).then((collection) => {
-        if (collection.docs && collection.docs.length) {
-          const doc = collection.docs[0];
-          this.mergeUsers(doc, oidcUser);
-          return Promise.resolve();
-        }
-        return this.createUser(oidcUser).then((doc) => {
-          this.successCallback(doc);
-          return Promise.resolve();
-        });
-      });
+      const collection = await this.findUser(oidcUser);
+      if (collection.docs && collection.docs.length) {
+        const doc = collection.docs[0];
+        await this.mergeUsers(doc, oidcUser);
+        return;
+      }
+      const doc = await this.createUser(oidcUser);
+      this.successCallback(doc);
+      return;
     }
     this.success(req.user);
-    return Promise.resolve();
   }
 }

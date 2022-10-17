@@ -79,32 +79,36 @@ describe("Auth0Strategy", () => {
       });
     });
     it("existing user should merge the two", async () => {
+      const oidcUser = {
+        id: "existing-oidc",
+        email: "existing@oidc.com",
+        picture: "http://my-avatar.com/void.gif",
+      };
       const req = {
         oidc: {
-          user: {
-            id: "existing-oidc",
-            email: "existing@oidc.com",
-            picture: "http://my-avatar.com/void.gif",
-          },
+          user: oidcUser,
         },
       } as unknown as Request;
-
-      const spyMerge = jest
-        .spyOn(strategy, "mergeUsers")
-        .mockImplementation(() => {
-          return { ...req["oidc"].user };
-        });
+      const foundUser = {
+        id: "existing-oidc",
+        full_name: "Test User",
+      };
       const spyFind = jest.spyOn(strategy.ctx, "find").mockResolvedValue({
-        docs: [
-          {
-            id: "existing-oidc",
-            full_name: "Test User",
-          },
-        ],
+        docs: [foundUser],
       } as unknown as PaginatedDocs<any>);
+      const spyUpdate = jest.spyOn(strategy.ctx, "update").mockResolvedValue({
+        ...foundUser,
+        ...oidcUser,
+      });
       await strategy.authenticate(req);
       expect(spyFind).toBeCalledTimes(1);
-      expect(spyMerge).toBeCalledTimes(1);
+      expect(spyUpdate).toBeCalledWith({
+        collection: strategy.slug,
+        id: foundUser.id,
+        data: {
+          ...oidcUser,
+        },
+      });
       expect(protoSuccessMock).toBeCalledWith({
         id: "existing-oidc",
         email: "existing@oidc.com",
