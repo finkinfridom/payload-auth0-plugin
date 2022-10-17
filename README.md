@@ -58,7 +58,7 @@ const MyAuthCollection: CollectionConfig = {
     auth: {
         strategies: [
             {
-                name: Auth0Strategy.strategyName,
+                name: Auth0Strategy.name,
                 strategy: (ctx) => {
                     return new Auth0Strategy(ctx, "authCollection");
                 }
