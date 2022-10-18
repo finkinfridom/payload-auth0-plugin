@@ -1275,7 +1275,7 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@faceless-ui/modal@^2.0.0-alpha.4":
+"@faceless-ui/modal@^2.0.1":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@faceless-ui/modal/-/modal-2.0.1.tgz#8a47299442eff450c09432cfaef35c5471becad6"
   integrity sha512-z1PaaLxwuX+1In4vhUxODZndGKdCY+WIqzvtnas3CaYGGCVJBSJ4jfv9UEEGZzcahmSy+71bEL89cUT6d36j1Q==
@@ -7644,10 +7644,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-1.1.12.tgz#db675ef7c14475eb5e5ef422fb4b097d3c2408b4"
-  integrity sha512-DnnvExzGFjn3lwFoe9ErNUdYMolWC3bwYenu5DExbToKtBWIPlqVQeip2FOgbnGFGQxKqGBKrNXPmAOHdrGmKw==
+payload@^1.1.15:
+  version "1.1.15"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.1.15.tgz#18a1668e9b66d31467435aef0f4ab13694207d94"
+  integrity sha512-+oESj5iwjIzGvd40sIC2lY+1qvy8IcrlXh3IYVgBlpkTPLXK6Rp8LepM1zGQBC5LN3PbUtLtHNAEXTBQpVBt1g==
   dependencies:
     "@babel/cli" "^7.12.8"
     "@babel/core" "^7.11.6"
@@ -7660,7 +7660,7 @@ payload@^1.1.12:
     "@babel/preset-typescript" "^7.12.1"
     "@babel/register" "^7.11.5"
     "@date-io/date-fns" "^2.10.6"
-    "@faceless-ui/modal" "^2.0.0-alpha.4"
+    "@faceless-ui/modal" "^2.0.1"
     "@faceless-ui/scroll-info" "^1.2.3"
     "@faceless-ui/window-info" "^2.0.2"
     "@types/is-plain-object" "^2.0.4"
