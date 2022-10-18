@@ -14,7 +14,7 @@
   "dependencies": {
     "dotenv": "^16.0.3",
     "express-openid-connect": "^2.8.0",
-    "payload": "^1.1.12"
+    "payload": "^1.1.15"
   },
   "devDependencies": {
     "@types/express": "4.17.14",
