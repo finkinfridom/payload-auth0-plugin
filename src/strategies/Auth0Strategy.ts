@@ -3,7 +3,13 @@ import { Payload } from "payload";
 import { Request } from "express";
 import { pino } from "pino";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
+import crypto from "crypto";
 
+const chars: string[] = [
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", // letters
+  "0123456789", // numbers
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", // either
+];
 export class Auth0Strategy extends Strategy {
   ctx: Payload;
   readonly slug: string;
@@ -18,8 +24,13 @@ export class Auth0Strategy extends Strategy {
     this.slug = collectionSlug;
   }
 
-  createPassword(): string {
-    return Math.random().toString(36).slice(-8);
+  createPassword(
+    length = 20,
+    wishlist = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz~!@-#$"
+  ): string {
+    return Array.from(crypto.randomFillSync(new Uint32Array(length)))
+      .map((x) => wishlist[x % wishlist.length])
+      .join("");
   }
 
   createUser(oidcUser): Promise<any> {

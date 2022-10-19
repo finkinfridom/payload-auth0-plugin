@@ -17,7 +17,9 @@ describe("Auth0Strategy", () => {
       .spyOn(Auth0Strategy.prototype, "success")
       .mockImplementation();
     jest.spyOn(Auth0Strategy.prototype, "error").mockImplementation();
-    jest.spyOn(Math, "random").mockImplementation(() => 0.08531340799759524);
+    jest
+      .spyOn(strategy, "createPassword")
+      .mockImplementation(() => "9Xp0a7OrLv613l1aR9k4");
   });
   afterAll(() => {
     jest.restoreAllMocks();
@@ -73,7 +75,7 @@ describe("Auth0Strategy", () => {
       expect(protoSuccessMock).toBeCalledWith({
         id: "non-existing-oidc",
         email: "non-existing@oidc.com",
-        password: "kdrjjwuo",
+        password: "9Xp0a7OrLv613l1aR9k4",
         collection: "test-slug",
         _strategy: "test-slug-auth0",
       });
