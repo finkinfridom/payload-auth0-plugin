@@ -1,11 +1,14 @@
 {
   "name": "payload-auth0-plugin",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "https://github.com/finkinfridom/payload-auth0-plugin.git",
   "author": "a.maghini@gmail.com",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "tsc --watch",
     "build": "tsc",
