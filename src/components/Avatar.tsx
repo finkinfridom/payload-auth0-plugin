@@ -1,5 +1,5 @@
 import React from "react";
-import { useAuth } from "payload/components/utilities";
+import { useAuth } from "payload/dist/admin/components/utilities/Auth";
 import { User } from "payload/dist/auth";
 import { AuthContext } from "payload/dist/admin/components/utilities/Auth/types";
 
