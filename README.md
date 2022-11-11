@@ -1,6 +1,6 @@
 # payload-auth0-plugin
-Extends `payloadcms` with Auth0 integration
 
+Extends `payloadcms` with Auth0 integration
 
 ## Install
 
@@ -8,8 +8,7 @@ Extends `payloadcms` with Auth0 integration
 
 ## Get Started
 
-
-### server.ts 
+### server.ts
 
 ```js
 import { auth } from "express-openid-connect";
@@ -34,7 +33,7 @@ app.use(auth(config));
 ### payload.config.ts
 
 ```js
-import { Avatar, LoginButton, LogoutButton } from "payload-auth0-plugin";
+import { Avatar, LoginButton, LogoutButton } from "payload-auth0-plugin/dist/components";
 
 export default buildConfig({
     ....
@@ -54,52 +53,52 @@ export default buildConfig({
 import { Auth0Strategy, PictureField } from "payload-auth0-plugin";
 
 const MyAuthCollection: CollectionConfig = {
-    slug: "authCollection",
-    auth: {
-        strategies: [
-            {
-                name: Auth0Strategy.name,
-                strategy: (ctx) => {
-                    return new Auth0Strategy(ctx, "authCollection");
-                }
-            }
-        ]
-    },
-    fields: [
-        {
-            name: "picture",
-            type: "text",
-            admin: {
-                hidden: true,
-                condition: (data) => {
-                    return data.picture;
-                },
-            },
+  slug: "authCollection",
+  auth: {
+    strategies: [
+      {
+        name: Auth0Strategy.name,
+        strategy: (ctx) => {
+          return new Auth0Strategy(ctx, "authCollection");
         },
-        {
-            name: "pictureVisual",
-            type: "ui",
-            admin: {
-                position: "sidebar",
-                condition: (_, siblingData) => {
-                    return siblingData.picture;
-                },
-                components: {
-                    Field: PictureField,
-                    Cell: PictureField,
-                },
-            },
-        },
-        {
-            name: "sub",
-            type: "text",
-            admin: {
-                readOnly: true,
-                condition: (data) => {
-                    return data.sub;
-                },
-            },
-        },
+      },
     ],
+  },
+  fields: [
+    {
+      name: "picture",
+      type: "text",
+      admin: {
+        hidden: true,
+        condition: (data) => {
+          return data.picture;
+        },
+      },
+    },
+    {
+      name: "pictureVisual",
+      type: "ui",
+      admin: {
+        position: "sidebar",
+        condition: (_, siblingData) => {
+          return siblingData.picture;
+        },
+        components: {
+          Field: PictureField,
+          Cell: PictureField,
+        },
+      },
+    },
+    {
+      name: "sub",
+      type: "text",
+      admin: {
+        readOnly: true,
+        condition: (data) => {
+          return data.sub;
+        },
+      },
+    },
+  ],
 };
 ```
