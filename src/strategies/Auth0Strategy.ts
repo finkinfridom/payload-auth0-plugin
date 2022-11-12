@@ -5,11 +5,6 @@ import { pino } from "pino";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
 import crypto from "crypto";
 
-const chars: string[] = [
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz", // letters
-  "0123456789", // numbers
-  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789", // either
-];
 export class Auth0Strategy extends Strategy {
   ctx: Payload;
   readonly slug: string;
