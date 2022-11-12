@@ -1,7 +1,9 @@
 name: Run tests
 on:
-  release:
-    types: [created]
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
   workflow_dispatch:
 jobs:
   build:
