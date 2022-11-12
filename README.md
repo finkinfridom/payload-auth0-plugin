@@ -50,7 +50,8 @@ export default buildConfig({
 ### your-auth-collection.ts
 
 ```js
-import { Auth0Strategy, PictureField } from "payload-auth0-plugin";
+import { Auth0Strategy } from "payload-auth0-plugin";
+import { PictureField } from "payload-auth0-plugin/dist/components";
 
 const MyAuthCollection: CollectionConfig = {
   slug: "authCollection",
