@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth } from "payload/components/utilities";
-import { User } from "payload/dist/auth";
 import { AuthContext } from "payload/dist/admin/components/utilities/Auth/types";
+import { Auth0User } from "./types";
 
 const css = `
   .graphic-account .circle1 {
@@ -12,10 +12,8 @@ const css = `
   }
 `;
 
-export interface Auth0User extends User {
-  picture: string;
-}
 export default function Avatar() {
+  return <h1>Ok</h1>;
   const { user } = useAuth() as AuthContext<Auth0User>;
   return user.picture ? (
     <img src={user.picture} />

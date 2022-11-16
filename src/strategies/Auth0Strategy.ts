@@ -1,9 +1,11 @@
 import { Strategy } from "passport";
-import { Payload } from "payload";
+import payload, { Payload } from "payload";
 import { Request } from "express";
 import { pino } from "pino";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
 import crypto from "crypto";
+import jwt from "jsonwebtoken";
+import getExtractJWT from "payload/dist/auth/getExtractJWT";
 
 export class Auth0Strategy extends Strategy {
   ctx: Payload;
@@ -63,7 +65,7 @@ export class Auth0Strategy extends Strategy {
     user._strategy = `${this.slug}-${this.name}`;
     this.success(user);
   }
-  async authenticate(req: Request, options?: any): Promise<any> {
+  async authenticate(req: Request): Promise<any> {
     // @ts-ignore
     if (req.oidc && req.oidc.user) {
       // @ts-ignore
@@ -82,6 +84,31 @@ export class Auth0Strategy extends Strategy {
       const doc = await this.createUser(oidcUser);
       this.successCallback(doc);
       return;
+    }
+    if (!req.user) {
+      const payloadToken = getExtractJWT(this.ctx.config)(req);
+      if (payloadToken) {
+        const tokenData = jwt.verify(payloadToken, req.payload.secret, {});
+        if (tokenData) {
+          const collection = await this.ctx.find({
+            collection: tokenData.collection as string,
+            where: {
+              id: {
+                equals: tokenData.id,
+              },
+            },
+          });
+          if (collection && collection.docs && collection.docs.length) {
+            const user = collection.docs[0];
+            this.success({
+              ...user,
+              collection: tokenData.collection,
+            });
+
+            return;
+          }
+        }
+      }
     }
     this.success(req.user);
   }
