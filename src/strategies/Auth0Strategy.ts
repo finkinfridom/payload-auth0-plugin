@@ -6,6 +6,7 @@ import { PaginatedDocs } from "payload/dist/mongoose/types";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import getExtractJWT from "payload/dist/auth/getExtractJWT";
+import { PayloadRequest } from "payload/dist/types";
 
 export class Auth0Strategy extends Strategy {
   ctx: Payload;
@@ -88,7 +89,11 @@ export class Auth0Strategy extends Strategy {
     if (!req.user) {
       const payloadToken = getExtractJWT(this.ctx.config)(req);
       if (payloadToken) {
-        const tokenData = jwt.verify(payloadToken, req.payload.secret, {});
+        const tokenData = jwt.verify(
+          payloadToken,
+          (req as PayloadRequest).payload.secret,
+          {}
+        );
         if (tokenData) {
           const collection = await this.ctx.find({
             collection: tokenData.collection as string,
