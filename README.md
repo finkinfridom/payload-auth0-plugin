@@ -14,6 +14,8 @@ Extends `payloadcms` with Auth0 integration
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=finkinfridom/payload-auth0-plugin&amp;utm_campaign=Badge_Grade)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=finkinfridom/payload-auth0-plugin&utm_campaign=Badge_Coverage)
+
 ## Install
 
 `yarn add payload-auth0-plugin`
