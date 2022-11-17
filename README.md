@@ -4,11 +4,11 @@ Extends `payloadcms` with Auth0 integration
 
 ## Current status
 
-![codeql](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml/badge.svg)
+[![codeql](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml)
 
-![test](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml/badge.svg)
+[![test](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml)
 
-![publish](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml/badge.svg)
+[![publish](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml)
 
 [![GitHub Super-Linter](https://github.com/finkinfridom/payload-auth0-plugin/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
