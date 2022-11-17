@@ -10,6 +10,8 @@ Extends `payloadcms` with Auth0 integration
 
 ![publish](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml/badge.svg)
 
+[![GitHub Super-Linter](https://github.com/finkinfridom/payload-auth0-plugin/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+
 ## Install
 
 `yarn add payload-auth0-plugin`
