@@ -12,6 +12,8 @@ Extends `payloadcms` with Auth0 integration
 
 [![GitHub Super-Linter](https://github.com/finkinfridom/payload-auth0-plugin/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/linter.yml)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=finkinfridom/payload-auth0-plugin&amp;utm_campaign=Badge_Grade)
+
 ## Install
 
 `yarn add payload-auth0-plugin`
