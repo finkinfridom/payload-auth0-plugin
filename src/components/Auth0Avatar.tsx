@@ -1,7 +1,7 @@
 import React from "react";
-import { useAuth } from "payload/components/utilities";
-import { User } from "payload/dist/auth";
+import { useAuth, useConfig } from "payload/components/utilities";
 import { AuthContext } from "payload/dist/admin/components/utilities/Auth/types";
+import { Auth0User } from "./types";
 
 const css = `
   .graphic-account .circle1 {
@@ -12,12 +12,9 @@ const css = `
   }
 `;
 
-export interface Auth0User extends User {
-  picture: string;
-}
-export default function Avatar() {
+const Auth0Avatar: React.FC = () => {
   const { user } = useAuth() as AuthContext<Auth0User>;
-  return user.picture ? (
+  return user && user.picture ? (
     <img src={user.picture} />
   ) : (
     <svg
@@ -33,4 +30,6 @@ export default function Avatar() {
       <path d="M12.5,24a11.44,11.44,0,0,0,7.66-2.94c-.5-2.71-3.73-4.8-7.66-4.8s-7.16,2.09-7.66,4.8A11.44,11.44,0,0,0,12.5,24Z" />
     </svg>
   );
-}
+};
+
+export default Auth0Avatar;

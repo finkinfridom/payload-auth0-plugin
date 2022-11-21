@@ -1,9 +1,6 @@
 import React from "react";
+import { LoginButtonProps } from "./types";
 
-export interface LoginButtonProps {
-  text?: string;
-  href?: string;
-}
 const LoginButton = (props?: LoginButtonProps) => {
   return () => {
     const {

@@ -51,11 +51,12 @@ import { Avatar, LoginButton, LogoutButton } from "payload-auth0-plugin/dist/com
 
 export default buildConfig({
     ....
-    admin:{
+    admin: {
         avatar: Avatar,
+        logoutRoute: process.env.REACT_APP_AUTH0_LOGOUT_URL,
+        inactivityRoute: process.env.REACT_APP_INACTIVITY_URL,
         components: {
             afterLogin: [LoginButton()],
-            afterNavLinks: [LogoutButton()],
         },
     }
 })
