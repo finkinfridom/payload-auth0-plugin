@@ -4,11 +4,17 @@ Extends `payloadcms` with Auth0 integration
 
 ## Current status
 
-![codeql](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml/badge.svg)
+[![codeql](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/codeql.yml)
 
-![test](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml/badge.svg)
+[![test](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/test.yml)
 
-![publish](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml/badge.svg)
+[![publish](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/publish.yml)
+
+[![GitHub Super-Linter](https://github.com/finkinfridom/payload-auth0-plugin/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/linter.yml)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=finkinfridom/payload-auth0-plugin&amp;utm_campaign=Badge_Grade)
+
+[![Codacy Badge](https://app.codacy.com/project/badge/Coverage/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=finkinfridom/payload-auth0-plugin&utm_campaign=Badge_Coverage)
 
 ## Install
 
