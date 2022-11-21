@@ -12,7 +12,7 @@ const css = `
   }
 `;
 
-const Auth0Avatar: React.FC = (props) => {
+const Auth0Avatar: React.FC = () => {
   const { user } = useAuth() as AuthContext<Auth0User>;
   return user && user.picture ? (
     <img src={user.picture} />
