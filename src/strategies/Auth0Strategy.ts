@@ -1,5 +1,5 @@
 import { Strategy } from "passport";
-import payload, { Payload } from "payload";
+import { Payload } from "payload";
 import { Request } from "express";
 import { pino } from "pino";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
