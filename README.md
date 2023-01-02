@@ -46,7 +46,7 @@ app.use(auth(config));
 
 ### REACT_APP env variables
 
-```
+```sh
 REACT_APP_SERVER_BASE_URL=http://localhost:3000
 REACT_APP_AUTH0_LOGIN_URL=/auth0/login # the one you set up in Auth0
 REACT_APP_AUTH0_LOGOUT_URL=/auth0/logout # the one you set up in Auth0
