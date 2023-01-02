@@ -12,7 +12,7 @@ Extends `payloadcms` with Auth0 integration
 
 [![GitHub Super-Linter](https://github.com/finkinfridom/payload-auth0-plugin/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/finkinfridom/payload-auth0-plugin/actions/workflows/linter.yml)
 
-[![Codacy Badge](https://app.codacy.com/project/badge/Grade/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=finkinfridom/payload-auth0-plugin&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=finkinfridom/payload-auth0-plugin&utm_campaign=Badge_Grade)
 
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/450dafca0414474b9e39f63e2159bb43)](https://www.codacy.com/gh/finkinfridom/payload-auth0-plugin/dashboard?utm_source=github.com&utm_medium=referral&utm_content=finkinfridom/payload-auth0-plugin&utm_campaign=Badge_Coverage)
 
@@ -42,6 +42,15 @@ const config = {
   },
 };
 app.use(auth(config));
+```
+
+### REACT_APP env variables
+
+```sh
+REACT_APP_SERVER_BASE_URL=http://localhost:3000
+REACT_APP_AUTH0_LOGIN_URL=/auth0/login # the one you set up in Auth0
+REACT_APP_AUTH0_LOGOUT_URL=/auth0/logout # the one you set up in Auth0
+AUTH0_CALLBACK_URL=/auth0/callback # the one you set up in Auth0
 ```
 
 ### payload.config.ts
