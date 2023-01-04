@@ -8239,10 +8239,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-1.4.1.tgz#77bfcf044049d7f7de2fb68498df3ea6733dfea7"
-  integrity sha512-bVwMjIHfz3UD/TIW6x/4Q6DsiDkR8TMwmOqXS5NS2C5G+B8R+ygmB6jCcngHNXGihpZaPjbz+mv+bfrbuDEWSg==
+payload@^1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.4.2.tgz#2e3b1116f1d92c76eb92ce03c8706eab1978142b"
+  integrity sha512-IEeAQ2Ga1MLvsQAmQ+kpfLuEy7NyGNvJcigy77SPnm52MjwszV4uec86Tkh8PjG6vYHHVzPHLWxKkDewnESU8g==
   dependencies:
     "@babel/cli" "^7.12.8"
     "@babel/core" "^7.11.6"
