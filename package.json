@@ -19,7 +19,7 @@
     "push:cov": "yarn test && docker run -v $PWD:/code codacy/codacy-coverage-reporter report --coverage-reports /code/coverage/lcov.info"
   },
   "dependencies": {
-    "core-js": "^3.26.1",
+    "core-js": "^3.27.1",
     "dotenv": "^16.0.3",
     "express-openid-connect": "^2.11.0",
     "payload": "^1.4.1",
