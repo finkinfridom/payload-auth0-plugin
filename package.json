@@ -37,7 +37,7 @@
     "@parcel/transformer-typescript-types": "2.8.3",
     "@types/express": "4.17.15",
     "@types/jest": "29.4.2",
-    "@types/passport": "1.0.11",
+    "@types/passport": "1.0.12",
     "@types/pino": "7.0.5",
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
