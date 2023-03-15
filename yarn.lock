@@ -2273,10 +2273,10 @@
   resolved "https://registry.yarnpkg.com/@types/parse-json/-/parse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
-"@types/passport@1.0.11":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.11.tgz#d046b41e28b280f4e7994614fb976e9b449cb7c6"
-  integrity sha512-pz1cx9ptZvozyGKKKIPLcVDVHwae4hrH5d6g5J+DkMRRjR3cVETb4jMabhXAUbg3Ov7T22nFHEgaK2jj+5CBpw==
+"@types/passport@1.0.12":
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@types/passport/-/passport-1.0.12.tgz#7dc8ab96a5e895ec13688d9e3a96920a7f42e73e"
+  integrity sha512-QFdJ2TiAEoXfEQSNDISJR1Tm51I78CymqcBa8imbjo6dNNu+l2huDxxbDEIoFIwOSKMkOfHEikyDuZ38WwWsmw==
   dependencies:
     "@types/express" "*"
 
@@ -4210,10 +4210,10 @@ express-graphql@0.12.0:
     http-errors "1.8.0"
     raw-body "^2.4.1"
 
-express-openid-connect@^2.11.0:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/express-openid-connect/-/express-openid-connect-2.11.0.tgz#e302e1386f0d9f89fb2c0be845a9fc329516576f"
-  integrity sha512-7E/RVKP4YCb8qjpMfaLHSRJJfwHq4eIIW5KF1ZxWo5Zl7TrktA7I/GkiKMMoatYbqIcbicsf+V5GO8CeQme19g==
+express-openid-connect@^2.12.0:
+  version "2.12.0"
+  resolved "https://registry.yarnpkg.com/express-openid-connect/-/express-openid-connect-2.12.0.tgz#e78b649ed19612b6ed80bdebd32c2ea3bace2d2b"
+  integrity sha512-wuGe4D0pBP6B7RqkzRgywXY2r1N+D54OcoVTGA4QikEUJ3aXsFMvYZ0qYRDkfE5k4mac1+q+eq6zk/VAH0SxNg==
   dependencies:
     base64url "^3.0.1"
     clone "^2.1.2"
