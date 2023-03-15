@@ -49,7 +49,7 @@ describe("Auth0Strategy", () => {
         },
       } as unknown as Request;
 
-      const result = await strategy.authenticate(req);
+      await strategy.authenticate(req);
       expect(strategy.error).toBeCalled();
     });
     it("non-existing user should create a new one", async () => {
