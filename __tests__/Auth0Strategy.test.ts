@@ -31,13 +31,13 @@ describe("Auth0Strategy", () => {
     expect(strategy.name).toBe("auth0");
   });
   describe("authenticate", () => {
-    it("should fallback to standard user-pwd login", () => {
+    it("should fallback to standard user-pwd login", async () => {
       const req = {
         user: {
           id: "test",
         },
       } as unknown as Request;
-      strategy.authenticate(req);
+      await strategy.authenticate(req);
       expect(strategy.success).toBeCalledWith(req.user);
     });
     it("invalid 'oidc' should return error", async () => {
@@ -49,7 +49,7 @@ describe("Auth0Strategy", () => {
         },
       } as unknown as Request;
 
-      await strategy.authenticate(req);
+      const result = await strategy.authenticate(req);
       expect(strategy.error).toBeCalled();
     });
     it("non-existing user should create a new one", async () => {
@@ -70,7 +70,7 @@ describe("Auth0Strategy", () => {
         .spyOn(strategy.ctx, "find")
         .mockResolvedValue({ docs: [] } as unknown as PaginatedDocs<any>);
       await strategy.authenticate(req);
-      expect(spyFind).toBeCalledTimes(1);
+      expect(spyFind).toBeCalledTimes(2);
       expect(spyCreate).toBeCalledTimes(1);
       expect(protoSuccessMock).toBeCalledWith({
         id: "non-existing-oidc",
