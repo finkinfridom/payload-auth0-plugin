@@ -40,12 +40,23 @@ export class Auth0Strategy extends Strategy {
       },
     });
   }
-  findUser(oidcUser): Promise<PaginatedDocs<any>> {
-    return this.ctx.find({
+  async findUser(oidcUser): Promise<PaginatedDocs<any>> {
+    const result = await this.ctx.find({
       collection: this.slug,
       where: {
         sub: {
           equals: oidcUser.sub,
+        },
+      },
+    });
+    if (result.docs && result.docs.length) {
+      return Promise.resolve(result);
+    }
+    return this.ctx.find({
+      collection: this.slug,
+      where: {
+        email: {
+          equals: oidcUser.email,
         },
       },
     });
