@@ -22,7 +22,7 @@
     "core-js": "^3.27.2",
     "dotenv": "^16.0.3",
     "express-openid-connect": "^2.13.0",
-    "payload": "^1.6.20",
+    "payload": "^1.7.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
