@@ -10,6 +10,7 @@
     "dist"
   ],
   "scripts": {
+    "clean": "npx yarn-deduplicate yarn.lock",
     "dev": "tsc --watch",
     "build:tsc": "tsc --p tsconfig.components.json && tsc --p tsconfig.strategies.json",
     "build:components": "webpack --config webpack.components.config.js",
@@ -47,7 +48,7 @@
     "postcss-loader": "^7.0.2",
     "rimraf": "^4.4.0",
     "sass-loader": "^13.2.0",
-    "serve": "^14.1.2",
+    "serve": "^14.2.0",
     "ts-jest": "29.1.0",
     "ts-loader": "^9.4.2",
     "ts-node": "10.9.1",
