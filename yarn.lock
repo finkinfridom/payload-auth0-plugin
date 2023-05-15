@@ -2466,7 +2466,7 @@ abort-controller@^3.0.0:
   dependencies:
     event-target-shim "^5.0.0"
 
-accepts@^1.3.7, accepts@~1.3.5, accepts@~1.3.8:
+accepts@~1.3.5, accepts@~1.3.8:
   version "1.3.8"
   resolved "https://registry.yarnpkg.com/accepts/-/accepts-1.3.8.tgz#0bf0be125b67014adcb0b0921e62db7bffe16b2e"
   integrity sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==
@@ -3353,7 +3353,7 @@ content-disposition@0.5.4:
   dependencies:
     safe-buffer "5.2.1"
 
-content-type@^1.0.4, content-type@~1.0.4:
+content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
@@ -4136,16 +4136,6 @@ express-fileupload@1.4.0:
   dependencies:
     busboy "^1.6.0"
 
-express-graphql@0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/express-graphql/-/express-graphql-0.12.0.tgz#58deabc309909ca2c9fe2f83f5fbe94429aa23df"
-  integrity sha512-DwYaJQy0amdy3pgNtiTDuGGM2BLdj+YO2SgbKoLliCfuHv3VVTt7vNG/ZqK2hRYjtYHE2t2KB705EU94mE64zg==
-  dependencies:
-    accepts "^1.3.7"
-    content-type "^1.0.4"
-    http-errors "1.8.0"
-    raw-body "^2.4.1"
-
 express-openid-connect@^2.14.0:
   version "2.16.0"
   resolved "https://registry.yarnpkg.com/express-openid-connect/-/express-openid-connect-2.16.0.tgz#ade9e6f280bbf01234a8d826da4db15f0d44867c"
@@ -4554,6 +4544,11 @@ graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, 
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
 
+graphql-http@^1.17.1:
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/graphql-http/-/graphql-http-1.18.0.tgz#6a72fc6d085e0761d9d483273c6fa9a6de5f6c4c"
+  integrity sha512-r2sIo6jCTQi1aj7s+Srg7oU3+r5pUUgxgDD5JDZOmFzrbXVGz+yMhIKhvqW0cV10DcnVIFCOzuFuc1qvnjJ7yQ==
+
 graphql-playground-html@^1.6.30:
   version "1.6.30"
   resolved "https://registry.yarnpkg.com/graphql-playground-html/-/graphql-playground-html-1.6.30.tgz#14c2a8eb7fc17bfeb1a746bbb28a11e34bf0b391"
@@ -4727,17 +4722,6 @@ http-cache-semantics@^4.0.0:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/http-cache-semantics/-/http-cache-semantics-4.1.1.tgz#abe02fcb2985460bf0323be664436ec3476a6d5a"
   integrity sha512-er295DKPVsV82j5kw1Gjt+ADA/XYHsajl82cGNQG2eyoPkvgUhX+nDIyelzhIWbbsXP39EHcI6l5tYs2FYqYXQ==
-
-http-errors@1.8.0:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/http-errors/-/http-errors-1.8.0.tgz#75d1bbe497e1044f51e4ee9e704a62f28d336507"
-  integrity sha512-4I8r0C5JDhT5VkvI47QktDW75rNlGVsUf/8hzjCC/wkWI/jdTRmBb9aI7erSG82r1bjKY3F6k28WnsVxB1C73A==
-  dependencies:
-    depd "~1.1.2"
-    inherits "2.0.4"
-    setprototypeof "1.2.0"
-    statuses ">= 1.5.0 < 2"
-    toidentifier "1.0.0"
 
 http-errors@2.0.0:
   version "2.0.0"
@@ -6628,10 +6612,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^1.6.21:
-  version "1.6.31"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-1.6.31.tgz#9b0d6687b998a562064b1f661a29dbe2fe7d8d8f"
-  integrity sha512-EEnzOaR786l1tPul1RlFEl1Cp1NrAMUoHvIv3Aigu997co4g7XoPu10v5MKu/jSq84JekJn84vt2AfGiLtIBfw==
+payload@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.7.0.tgz#a6e04108347d112ff30198bb7a7391d9ffdbaae3"
+  integrity sha512-T38raz5eWjvnvwMrEJcRnGonhcwu2oZBEDXLyyuGoKd/KarAZGGsGq0cAi0sM59pfN05rO5rdhEOqYqE7UL7lQ==
   dependencies:
     "@date-io/date-fns" "^2.16.0"
     "@dnd-kit/core" "^6.0.7"
@@ -6657,7 +6641,6 @@ payload@^1.6.21:
     dotenv "^8.6.0"
     express "^4.18.2"
     express-fileupload "1.4.0"
-    express-graphql "0.12.0"
     express-rate-limit "^5.5.1"
     file-loader "^6.2.0"
     file-type "16.5.4"
@@ -6666,6 +6649,7 @@ payload@^1.6.21:
     fs-extra "^10.1.0"
     get-tsconfig "^4.4.0"
     graphql "^16.6.0"
+    graphql-http "^1.17.1"
     graphql-playground-middleware-express "^1.7.23"
     graphql-query-complexity "^0.12.0"
     graphql-scalars "^1.20.1"
@@ -6737,7 +6721,7 @@ payload@^1.6.21:
     url-loader "^4.1.1"
     use-context-selector "^1.4.1"
     uuid "^8.3.2"
-    webpack "^5.76.0"
+    webpack "^5.78.0"
     webpack-bundle-analyzer "^4.8.0"
     webpack-cli "^4.10.0"
     webpack-dev-middleware "6.0.1"
@@ -7517,7 +7501,7 @@ range-parser@^1.2.1, range-parser@~1.2.1:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.1.tgz#3cf37023d199e1c24d1a55b84800c2f3e6468031"
   integrity sha512-Hrgsx+orqoygnmhFbKaHE6c296J+HTAQXoxEF6gNupROmmGJRoyzfG3ccAveqCBrwr/2yxQ5BVd/GTl5agOwSg==
 
-raw-body@2.5.1, raw-body@^2.4.1:
+raw-body@2.5.1:
   version "2.5.1"
   resolved "https://registry.yarnpkg.com/raw-body/-/raw-body-2.5.1.tgz#fe1b1628b181b700215e5fd42389f98b71392857"
   integrity sha512-qqJBtEyVgS0ZmPGdCFPWJ3FreoqvG4MVQln/kCgF7Olq95IbOp0/BWyMwbdtn4VTvkM8Y7khCQ2Xgk/tcrCXig==
@@ -8618,11 +8602,6 @@ to-regex-range@^5.0.1:
   dependencies:
     is-number "^7.0.0"
 
-toidentifier@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.0.tgz#7e1be3470f1e77948bc43d94a3c8f4d7752ba553"
-  integrity sha512-yaOH/Pk/VEhBWWTlhI+qXxDFXlejDGcQipMlyxda9nthulaxLZUNcUqFxokp0vcYnvteJln5FNQDRrxj3YcbVw==
-
 toidentifier@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/toidentifier/-/toidentifier-1.0.1.tgz#3be34321a88a820ed1bd80dfaa33e479fbb8dd35"
@@ -9023,7 +9002,7 @@ webpack-sources@^3.2.3:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.2.3.tgz#2d4daab8451fd4b240cc27055ff6a0c2ccea0cde"
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
-webpack@^5.76.0:
+webpack@^5.76.0, webpack@^5.78.0:
   version "5.82.1"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.82.1.tgz#8f38c78e53467556e8a89054ebd3ef6e9f67dbab"
   integrity sha512-C6uiGQJ+Gt4RyHXXYt+v9f+SN1v83x68URwgxNQ98cvH8kxiuywWGP4XeNZ1paOzZ63aY3cTciCEQJNFUljlLw==
