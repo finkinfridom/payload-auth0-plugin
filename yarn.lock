@@ -7956,10 +7956,10 @@ pause@0.0.1:
   resolved "https://registry.npmjs.org/pause/-/pause-0.0.1.tgz"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^1.7.1:
-  version "1.15.8"
-  resolved "https://registry.npmjs.org/payload/-/payload-1.15.8.tgz"
-  integrity sha512-3TqHR42r7dzADfVDfbCgUkap46Dk5w02dNGaI8zTSNjIdjVJ4h9NjBM0rRbP5s1JDGuygrvAzAhiFMAN44aVnQ==
+payload@^1.11.4:
+  version "1.11.6"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-1.11.6.tgz#ad4a201243eb927e9eeb34051b0ec519c9b3e53d"
+  integrity sha512-jQV7EEsjWO38cf5cL5eR++Pu5qww/sypTg9685bJnvCiCdeCiWfGeea/A2KjKHFjzimTC8aV29a5YVaBTd8nWg==
   dependencies:
     "@date-io/date-fns" "^2.16.0"
     "@dnd-kit/core" "^6.0.7"
@@ -7968,15 +7968,14 @@ payload@^1.7.1:
     "@faceless-ui/scroll-info" "^1.3.0"
     "@faceless-ui/window-info" "^2.1.1"
     "@monaco-editor/react" "^4.5.1"
-    "@swc/core" "1.3.78"
-    "@swc/register" "0.1.10"
+    "@swc/core" "^1.3.26"
+    "@swc/register" "^0.1.10"
     "@types/sharp" "^0.31.1"
     body-parser "^1.20.1"
     bson-objectid "^2.0.4"
     compression "^1.7.4"
     conf "^10.2.0"
     connect-history-api-fallback "^1.6.0"
-    console-table-printer "^2.11.2"
     css-loader "^5.2.7"
     css-minimizer-webpack-plugin "^5.0.0"
     dataloader "^2.1.0"
@@ -10109,10 +10108,15 @@ tslib@^1.11.1:
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.14.1.tgz"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.0, tslib@^2.0.3, tslib@^2.3.1, tslib@^2.5.0:
+tslib@^2.0.0, tslib@^2.0.3, tslib@^2.5.0:
   version "2.6.2"
   resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
+
+tslib@^2.3.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
+  integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
 
 tunnel-agent@^0.6.0:
   version "0.6.0"
