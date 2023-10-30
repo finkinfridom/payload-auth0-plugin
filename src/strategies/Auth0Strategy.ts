@@ -2,7 +2,7 @@ import { Strategy } from "passport";
 import { Payload } from "payload";
 import { Request } from "express";
 import { pino } from "pino";
-import { PaginatedDocs } from "payload/dist/mongoose/types";
+import { PaginatedDocs } from "payload/database";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
 import getExtractJWT from "payload/dist/auth/getExtractJWT";
@@ -16,9 +16,7 @@ export class Auth0Strategy extends Strategy {
     super();
     this.ctx = ctx;
     this.name = "auth0";
-    this.logger = this.ctx.logger.child({
-      strategy: this.name,
-    });
+    this.logger = pino({ name: this.name });
     this.slug = collectionSlug;
   }
 
