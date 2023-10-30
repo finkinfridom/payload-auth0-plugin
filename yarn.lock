@@ -3962,9 +3962,9 @@ express-fileupload@1.4.0:
   dependencies:
     busboy "^1.6.0"
 
-express-openid-connect@^2.14.0:
+express-openid-connect@^2.17.0:
   version "2.17.0"
-  resolved "https://registry.npmjs.org/express-openid-connect/-/express-openid-connect-2.17.0.tgz"
+  resolved "https://registry.yarnpkg.com/express-openid-connect/-/express-openid-connect-2.17.0.tgz#819b83e431b845f5eb4e9da58b3de6fc8302e79c"
   integrity sha512-1/QZKbh+JQgBxX7RpB93iKSfLDXJ8tGMtzPpOf87LQps84A7SIls3YRZBbAqwamYcg4CDmlbHAaYSh0tlTNF8A==
   dependencies:
     base64url "^3.0.1"
