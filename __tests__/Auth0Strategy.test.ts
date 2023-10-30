@@ -3,7 +3,6 @@ import payload from "payload";
 import pino from "pino";
 import { Request } from "express";
 import { PaginatedDocs } from "payload/dist/mongoose/types";
-import { BulkOperationResult } from "payload/dist/collections/config/types";
 jest.mock("payload");
 describe("Auth0Strategy", () => {
   let strategy: Auth0Strategy;
