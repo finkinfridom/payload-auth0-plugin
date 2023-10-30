@@ -1,16 +1,13 @@
 import { Auth0Strategy } from "../src/strategies/Auth0Strategy";
 import payload from "payload";
-import pino from "pino";
 import { Request } from "express";
-import { PaginatedDocs } from "payload/dist/mongoose/types";
-import { BulkOperationResult } from "payload/dist/collections/config/types";
+import { PaginatedDocs } from "payload/database";
 jest.mock("payload");
 describe("Auth0Strategy", () => {
   let strategy: Auth0Strategy;
   let protoSuccessMock;
 
   beforeAll(() => {
-    payload.logger = pino();
     strategy = new Auth0Strategy(payload, "test-slug");
     Auth0Strategy.prototype.success = () => {};
     Auth0Strategy.prototype.error = () => {};
