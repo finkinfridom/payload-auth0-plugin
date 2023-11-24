@@ -5,7 +5,7 @@ const LoginButton = (props?: LoginButtonProps) => {
   return () => {
     const {
       text = "Log In with SSO",
-      href = process.env.REACT_APP_AUTH0_LOGIN || "/auth0/login",
+      href = process.env.REACT_APP_AUTH0_LOGIN_URL || "/auth0/login",
     } = props || {};
     return (
       <a
