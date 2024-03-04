@@ -4,7 +4,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 
 
-if (document) {
+if (global && global.document) {
   const Root = () => {
     return <></>;
   };
