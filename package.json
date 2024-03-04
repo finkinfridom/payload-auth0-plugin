@@ -1,10 +1,10 @@
 {
-  "name": "payload-auth0-plugin",
-  "version": "0.1.4",
+  "name": "@tbdy/payload-auth0-plugin",
+  "version": "0.1.5-rc",
   "main": "dist/strategies/index.js",
   "types": "dist/strategies/index.d.ts",
   "repository": "https://github.com/finkinfridom/payload-auth0-plugin.git",
-  "author": "a.maghini@gmail.com",
+  "author": "The Boundary",
   "license": "MIT",
   "files": [
     "dist"
@@ -61,5 +61,8 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.89.0",
     "webpack-cli": "^5.1.4"
+  },
+  "publishConfig": {
+    "registry": "https://akl-npm.buildmedia.com"
   }
 }
