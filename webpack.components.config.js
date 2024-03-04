@@ -4,7 +4,7 @@ const TerserJSPlugin = require("terser-webpack-plugin");
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
-    main: [path.resolve(__dirname, "dist/components/ui/app.js")],
+    main: [path.resolve(__dirname, "dist/components/ui/index.js")],
   },
   externals: {
     react: "react",

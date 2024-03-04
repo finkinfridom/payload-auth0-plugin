@@ -3,13 +3,15 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 
-const Root = () => {
-  return <></>;
-};
 
-const container = document.getElementById("app");
-const root = createRoot(container); // createRoot(container!) if you use TypeScript
-root.render(<Root />);
+if (document) {
+  const Root = () => {
+    return <></>;
+  };
+  const container = document.getElementById("app");
+  const root = createRoot(container); // createRoot(container!) if you use TypeScript
+  root.render(<Root />);
+}
 
 // Needed for Hot Module Replacement
 if (
