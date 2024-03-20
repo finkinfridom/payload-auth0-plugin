@@ -2619,9 +2619,9 @@
     "@types/estree" "*"
 
 "@types/eslint@*":
-  version "8.56.5"
-  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-8.56.5.tgz#94b88cab77588fcecdd0771a6d576fa1c0af9d02"
-  integrity sha512-u5/YPJHo1tvkSF2CE0USEkxon82Z5DBy2xR+qfyYNszpX9qcs4sT6uq2kBbj4BXY1+DBGDPnrhMZV3pKWGNukw==
+  version "8.56.6"
+  resolved "https://registry.yarnpkg.com/@types/eslint/-/eslint-8.56.6.tgz#d5dc16cac025d313ee101108ba5714ea10eb3ed0"
+  integrity sha512-ymwc+qb1XkjT/gfoQwxIeHZ6ixH23A+tCT2ADSA/DPVKzAjwYkTXBMCQ/f6fe4wEa85Lhp26VPeUxI7wMhAi7A==
   dependencies:
     "@types/estree" "*"
     "@types/json-schema" "*"
@@ -2741,9 +2741,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "20.11.28"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.28.tgz#4fd5b2daff2e580c12316e457473d68f15ee6f66"
-  integrity sha512-M/GPWVS2wLkSkNHVeLkrF2fD5Lx5UC4PxA0uZcKc6QqbIQUJyW1jVjueJYi1z8n0I5PxYrtpnPnWglE+y9A0KA==
+  version "20.11.30"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.11.30.tgz#9c33467fc23167a347e73834f788f4b9f399d66f"
+  integrity sha512-dHM6ZxwlmuZaRmUPfv1p+KrdD1Dci04FbdEm/9wEMouFqxYoFl5aMkt0VMAUtYRQDyYvD41WJLukhq/ha3YuTw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -2848,7 +2848,7 @@
   dependencies:
     "@types/yargs-parser" "*"
 
-"@webassemblyjs/ast@1.12.1", "@webassemblyjs/ast@^1.11.5":
+"@webassemblyjs/ast@1.12.1", "@webassemblyjs/ast@^1.12.1":
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.12.1.tgz#bb16a0e8b1914f979f45864c23819cc3e3f0d4bb"
   integrity sha512-EKfMUOPRRUTy5UII4qJDGPpqfwjOmZ5jeGFwid9mnoqIFK+e0vqoi1qH56JpmZSzEL53jKnNzScdmftJyG5xWg==
@@ -2914,7 +2914,7 @@
   resolved "https://registry.yarnpkg.com/@webassemblyjs/utf8/-/utf8-1.11.6.tgz#90f8bc34c561595fe156603be7253cdbcd0fab5a"
   integrity sha512-vtXf2wTQ3+up9Zsg8sa2yWiQpzSsMyXj0qViVP6xKGCUT8p8YJ6HqI7l5eCnWx1T/FYdsv07HQs2wTFbbof/RA==
 
-"@webassemblyjs/wasm-edit@^1.11.5":
+"@webassemblyjs/wasm-edit@^1.12.1":
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-edit/-/wasm-edit-1.12.1.tgz#9f9f3ff52a14c980939be0ef9d5df9ebc678ae3b"
   integrity sha512-1DuwbVvADvS5mGnXbE+c9NfA8QRcZ6iKquqjjmR10k6o+zzsRVesil54DKexiowcFCPdr/Q0qaMgB01+SQ1u6g==
@@ -2949,7 +2949,7 @@
     "@webassemblyjs/wasm-gen" "1.12.1"
     "@webassemblyjs/wasm-parser" "1.12.1"
 
-"@webassemblyjs/wasm-parser@1.12.1", "@webassemblyjs/wasm-parser@^1.11.5":
+"@webassemblyjs/wasm-parser@1.12.1", "@webassemblyjs/wasm-parser@^1.12.1":
   version "1.12.1"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/wasm-parser/-/wasm-parser-1.12.1.tgz#c47acb90e6f083391e3fa61d113650eea1e95937"
   integrity sha512-xikIi7c2FHXysxXe3COrVUPSheuBtpcfhbpFj4gmu7KRLYOzANztwUU0IbsqvMqzuNK2+glRGWCEqZo1WCLyAQ==
@@ -4379,7 +4379,7 @@ end-of-stream@^1.1.0, end-of-stream@^1.4.1:
   dependencies:
     once "^1.4.0"
 
-enhanced-resolve@^5.0.0, enhanced-resolve@^5.15.0:
+enhanced-resolve@^5.0.0, enhanced-resolve@^5.16.0:
   version "5.16.0"
   resolved "https://registry.yarnpkg.com/enhanced-resolve/-/enhanced-resolve-5.16.0.tgz#65ec88778083056cb32487faa9aef82ed0864787"
   integrity sha512-O+QWCviPNSSLAD9Ucn8Awv+poAkqn3T1XY5/N7kR7rQO9yfSGWkYZDwpJ+iKF7B8rxaQKWngSqACpgzeapSyoA==
@@ -4437,9 +4437,9 @@ es-get-iterator@^1.1.3:
     stop-iteration-iterator "^1.0.0"
 
 es-module-lexer@^1.2.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.4.1.tgz#41ea21b43908fe6a287ffcbe4300f790555331f5"
-  integrity sha512-cXLGjP0c4T3flZJKQSuziYoq7MlT+rnvfZjfp7h+I7K9BNX54kP9nyWvdbwjQ4u1iWbOL4u96fgeZLToQlZC7w==
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.4.2.tgz#ba1a62255ff9b41023aaf9bd08c016a5f1a3fef3"
+  integrity sha512-7nOqkomXZEaxUDJw21XZNtRk739QvrPSoZoRtbsEfcii00vdzZUh6zh1CQwHhrib8MdEtJfv5rJiGeb4KuV/vw==
 
 es5-ext@^0.10.35, es5-ext@^0.10.46, es5-ext@^0.10.53, es5-ext@^0.10.62, es5-ext@^0.10.64, es5-ext@~0.10.14, es5-ext@~0.10.2, es5-ext@~0.10.46:
   version "0.10.64"
@@ -5037,7 +5037,7 @@ got@^11.8.0:
     p-cancelable "^2.0.0"
     responselike "^2.0.0"
 
-graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.4, graceful-fs@^4.2.9:
+graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.11, graceful-fs@^4.2.4, graceful-fs@^4.2.9:
   version "4.2.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.11.tgz#4183e4e8bf08bb6e05bbb2f7d2e0c8f712ca40e3"
   integrity sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==
@@ -9131,7 +9131,7 @@ warning@^4.0.2:
   dependencies:
     loose-envify "^1.0.0"
 
-watchpack@^2.4.0:
+watchpack@^2.4.1:
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.4.1.tgz#29308f2cac150fa8e4c92f90e0ec954a9fed7fff"
   integrity sha512-8wrBCMtVhqcXP2Sup1ctSkga6uc2Bx0IIvKyT7yTFier5AXHooSI+QyQQAtTb7+E0IUCCKyTFmXqdqgum2XWGg==
@@ -9183,25 +9183,25 @@ webpack-sources@^3.2.3:
   integrity sha512-/DyMEOrDgLKKIG0fmvtz+4dUX/3Ghozwgm6iPp8KRhvn+eQf9+Q7GWxVNMk3+uCPWfdXYC4ExGBckIXdFEfH1w==
 
 webpack@^5.89.0:
-  version "5.90.3"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.90.3.tgz#37b8f74d3ded061ba789bb22b31e82eed75bd9ac"
-  integrity sha512-h6uDYlWCctQRuXBs1oYpVe6sFcWedl0dpcVaTf/YF67J9bKvwJajFulMVSYKHrksMB3I/pIagRzDxwxkebuzKA==
+  version "5.91.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.91.0.tgz#ffa92c1c618d18c878f06892bbdc3373c71a01d9"
+  integrity sha512-rzVwlLeBWHJbmgTC/8TvAcu5vpJNII+MelQpylD4jNERPwpBJOE2lEcko1zJX3QJeLjTTAnQxn/OJ8bjDzVQaw==
   dependencies:
     "@types/eslint-scope" "^3.7.3"
     "@types/estree" "^1.0.5"
-    "@webassemblyjs/ast" "^1.11.5"
-    "@webassemblyjs/wasm-edit" "^1.11.5"
-    "@webassemblyjs/wasm-parser" "^1.11.5"
+    "@webassemblyjs/ast" "^1.12.1"
+    "@webassemblyjs/wasm-edit" "^1.12.1"
+    "@webassemblyjs/wasm-parser" "^1.12.1"
     acorn "^8.7.1"
     acorn-import-assertions "^1.9.0"
     browserslist "^4.21.10"
     chrome-trace-event "^1.0.2"
-    enhanced-resolve "^5.15.0"
+    enhanced-resolve "^5.16.0"
     es-module-lexer "^1.2.1"
     eslint-scope "5.1.1"
     events "^3.2.0"
     glob-to-regexp "^0.4.1"
-    graceful-fs "^4.2.9"
+    graceful-fs "^4.2.11"
     json-parse-even-better-errors "^2.3.1"
     loader-runner "^4.2.0"
     mime-types "^2.1.27"
@@ -9209,7 +9209,7 @@ webpack@^5.89.0:
     schema-utils "^3.2.0"
     tapable "^2.1.1"
     terser-webpack-plugin "^5.3.10"
-    watchpack "^2.4.0"
+    watchpack "^2.4.1"
     webpack-sources "^3.2.3"
 
 whatwg-fetch@^3.4.1:
