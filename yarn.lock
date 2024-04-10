@@ -3936,9 +3936,9 @@ css-has-pseudo@^6.0.3:
     postcss-value-parser "^4.2.0"
 
 css-loader@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-7.1.0.tgz#6eb163c1fa78fed32272161fec7ffe6c956bb727"
-  integrity sha512-VFNj47MAG84MqYDdh9puJG0h98Xs7gEYaX0aeGkfjYqBLB0seOE325sVbqWwaNu3hMZwEP4bB+F4gvF+A63qMA==
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/css-loader/-/css-loader-7.1.1.tgz#de4163c0cb765c03d7957eb9e0a49c7f354948c7"
+  integrity sha512-OxIR5P2mjO1PSXk44bWuQ8XtMK4dpEqpIyERCx3ewOo3I8EmbcxMPUc5ScLtQfgXtOojoMv57So4V/C02HQLsw==
   dependencies:
     icss-utils "^5.1.0"
     postcss "^8.4.33"
@@ -8882,10 +8882,10 @@ type@^2.7.2:
   resolved "https://registry.yarnpkg.com/type/-/type-2.7.2.tgz#2376a15a3a28b1efa0f5350dcf72d24df6ef98d0"
   integrity sha512-dzlvlNlt6AXU7EBSfpAscydQ7gXB+pPGsPnfJnZpiNJBDj7IaJzQlBZYGdEi4R9HmPdBv2XmWJ6YUtoTa7lmCw==
 
-typescript@5.4.4:
-  version "5.4.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.4.tgz#eb2471e7b0a5f1377523700a21669dce30c2d952"
-  integrity sha512-dGE2Vv8cpVvw28v8HCPqyb08EzbBURxDpuhJvTrusShUfGnhHBafDsLdS1EhhxyL6BJQE+2cT3dDPAv+MQ6oLw==
+typescript@5.4.5:
+  version "5.4.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.4.5.tgz#42ccef2c571fdbd0f6718b1d1f5e6e5ef006f611"
+  integrity sha512-vcI4UpRgg81oIRUFwR0WSIHKt11nJ7SAVlYNIu+QpqeyXP+gpQJy/Z4+F0aGxSE4MqwjyXvW/TzgkLAx2AGHwQ==
 
 undici-types@~5.26.4:
   version "5.26.5"
