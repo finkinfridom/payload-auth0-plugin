@@ -3252,9 +3252,9 @@ bare-os@^2.1.0:
   integrity sha512-oPb8oMM1xZbhRQBngTgpcQ5gXw6kjOaRsSWsIeNyRxGed2w/ARyP7ScBYpWR1qfX2E5rS3gBw6OWcSQo+s+kUg==
 
 bare-path@^2.0.0, bare-path@^2.1.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/bare-path/-/bare-path-2.1.1.tgz#111db5bf2db0aed40081aa4ba38b8dfc2bb782eb"
-  integrity sha512-OHM+iwRDRMDBsSW7kl3dO62JyHdBKO3B25FB9vNQBPcGHMo4+eA8Yj41Lfbk3pS/seDY+siNge0LdRTulAau/A==
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/bare-path/-/bare-path-2.1.2.tgz#7a0940d34ebe65f7e179fa61ed8d49d9dc151d67"
+  integrity sha512-o7KSt4prEphWUHa3QUwCxUI00R86VdjiuxmJK0iNVDHYPGo+HsDaVCnqCmPbf/MiW1ok8F4p3m8RTHlWk8K2ig==
   dependencies:
     bare-os "^2.1.0"
 
@@ -6970,9 +6970,9 @@ pause@0.0.1:
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
 payload@^2.0.12:
-  version "2.14.0"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-2.14.0.tgz#f220335c101f2b299ce20b5474ffa06a2c0413b8"
-  integrity sha512-FveAFktmosocBkvTsp2nZ2xPEom365/T+dixQ6PVaiT+ERRvkH4CdokssUXUrhRM3GGmEqQFUxMYn66vduUuUA==
+  version "2.14.1"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-2.14.1.tgz#3139eb45a0930227bbedf7861b49eecf1c2bbd51"
+  integrity sha512-YTf1AQ3rVnrN1yUwc/teGNJXhPdDzejZ65Pl4Zz/fV31sQyC53lsCfVK8vgRJAKDrzogS3AngL3OvTwLBDsWHQ==
   dependencies:
     "@date-io/date-fns" "2.16.0"
     "@dnd-kit/core" "6.0.8"
@@ -7755,13 +7755,21 @@ react-diff-viewer-continued@3.2.6:
     memoize-one "^6.0.0"
     prop-types "^15.8.1"
 
-react-dom@18.2.0, react-dom@^18.2.0:
+react-dom@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.2.0.tgz#22aaf38708db2674ed9ada224ca4aa708d821e3d"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-dom@^18.2.0:
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.3.0.tgz#98a3a1cc4e471d517c2a084f38ab1d58d02cada7"
+  integrity sha512-zaKdLBftQJnvb7FtDIpZtsAIb2MZU087RM8bRDZU8LVCCFYjPTsDZJNFUWPcVz3HFSN1n/caxi0ca4B/aaVQGQ==
+  dependencies:
+    loose-envify "^1.1.0"
+    scheduler "^0.23.1"
 
 react-fast-compare@^3.0.1, react-fast-compare@^3.1.1:
   version "3.2.2"
@@ -7884,10 +7892,17 @@ react-transition-group@^4.3.0, react-transition-group@^4.4.2:
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
 
-react@18.2.0, react@^18.2.0:
+react@18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
+  dependencies:
+    loose-envify "^1.1.0"
+
+react@^18.2.0:
+  version "18.3.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.3.0.tgz#84386d0a36fdf5ef50fa5755b7812bdfb76194a5"
+  integrity sha512-RPutkJftSAldDibyrjuku7q11d3oy6wKOyPe5K1HA/HwwrXcEqBdHsLypkC2FFYjP7bPUa6gbzSBhw4sY2JcDg==
   dependencies:
     loose-envify "^1.1.0"
 
@@ -8144,10 +8159,17 @@ sax@^1.2.4:
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.3.0.tgz#a5dbe77db3be05c9d1ee7785dbd3ea9de51593d0"
   integrity sha512-0s+oAmw9zLl1V1cS9BtZN7JAd0cW5e0QH4W3LWEK6a4LaLEA2OTpGYWDY+6XasBLtz6wkm3u1xRw95mRuJ59WA==
 
-scheduler@0.23.0, scheduler@^0.23.0:
+scheduler@0.23.0:
   version "0.23.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.0.tgz#ba8041afc3d30eb206a487b6b384002e4e61fdfe"
   integrity sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==
+  dependencies:
+    loose-envify "^1.1.0"
+
+scheduler@^0.23.0, scheduler@^0.23.1:
+  version "0.23.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.23.1.tgz#ef964a7936d7cbe8f7bc0d38fc479a823aed2923"
+  integrity sha512-5GKS5JGfiah1O38Vfa9srZE4s3wdHbwjlCrvIookrg2FO9aIwKLOJXuJQFlEfNcVSOXuaL2hzDeY20uVXcUtrw==
   dependencies:
     loose-envify "^1.1.0"
 
