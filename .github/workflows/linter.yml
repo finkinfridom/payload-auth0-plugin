@@ -51,5 +51,4 @@ jobs:
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.js
           TYPESCRIPT_DEFAULT_STYLE: prettier
           VALIDATE_GITLEAKS: false
-          USE_FIND_ALGORITHM: true
           LINTER_RULES_PATH: /
