@@ -2662,9 +2662,9 @@
   integrity sha512-K0VQKziLUWkVKiRVrx4a40iPaxTUefQmjtkQofBkYRcoaaL/8rhwDWww9qWbrgicNOgnpIsMxyNIUM4+n6dUIA==
 
 "@types/node@*":
-  version "20.12.8"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.8.tgz#35897bf2bfe3469847ab04634636de09552e8256"
-  integrity sha512-NU0rJLJnshZWdE/097cdCBbyW1h4hEg0xpovcoAQYHl8dnEyp/NAOiE45pvc+Bd1Dt+2r94v2eGFpQJ4R7g+2w==
+  version "20.12.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.10.tgz#8f0c3f12b0f075eee1fe20c1afb417e9765bef76"
+  integrity sha512-Eem5pH9pmWBHoGAT8Dr5fdc5rYA+4NAovdM4EktRPVAAiJhmWWfQrA0cFhAbOsQdSfIHjAud6YdkbL69+zSKjw==
   dependencies:
     undici-types "~5.26.4"
 
@@ -6980,9 +6980,9 @@ pause@0.0.1:
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
 payload@^2.0.12:
-  version "2.15.0"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-2.15.0.tgz#49e4f58124aa8b2b58c215bfa59406f10fbdd479"
-  integrity sha512-ZxolYBT7ypmNZilRnwN5naDhK2C8LB0hRf7MspczKq7plq1hx8SCj1Xf+p6DdTLSVnUsyA7jDDehlfhh0BWPsA==
+  version "2.16.0"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-2.16.0.tgz#346e87e1649dab17f0ebe1a5ba238e32700c56d2"
+  integrity sha512-KD3+DHpGQSRnXuRIP0amTQKt7EnP4ir1FIQCNAKL+FYVX0sKDk4iDHgN6Yu1QTtE9S92dxyS6HGJrH4SuDIThg==
   dependencies:
     "@date-io/date-fns" "2.16.0"
     "@dnd-kit/core" "6.0.8"
