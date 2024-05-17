@@ -6980,9 +6980,9 @@ pause@0.0.1:
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
 payload@^2.0.12:
-  version "2.18.2"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-2.18.2.tgz#a6a0a1690796827edfdf9f6c777993bbc5395166"
-  integrity sha512-HucwUlhnLMi7YkDUXnEZznCz8CAtmd0rMW71syysFaBR7VdEV89bWqeCsY5KnVARiH604AKZZ+kzWsEETdGRKw==
+  version "2.18.3"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-2.18.3.tgz#cc9e8d5d8b6d3d34ddd20cdff796ecdac6464378"
+  integrity sha512-J+8GnnN7pxG17y4rosedQCE46f8ZaxJEY0f+We3lwUVUvzPM2EhvmUg+38V2PaxtR8MSSkPBCeOuGQjx1BAENQ==
   dependencies:
     "@date-io/date-fns" "2.16.0"
     "@dnd-kit/core" "6.0.8"
