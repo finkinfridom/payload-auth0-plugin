@@ -56,12 +56,13 @@ AUTH0_CALLBACK_URL=/auth0/callback # the one you set up in Auth0
 ### payload.config.ts
 
 ```js
-import { Avatar, LoginButton, LogoutButton } from "payload-auth0-plugin/dist/components";
+import Auth0Avatar from from "payload-auth0-plugin/dist/components/Auth0Avatar";
+import { LoginButton } from "payload-auth0-plugin/dist/components";
 
 export default buildConfig({
     ....
     admin: {
-        avatar: Avatar,
+        avatar: Auth0Avatar,
         logoutRoute: process.env.REACT_APP_AUTH0_LOGOUT_URL,
         inactivityRoute: process.env.REACT_APP_INACTIVITY_URL,
         components: {
