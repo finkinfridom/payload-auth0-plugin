@@ -1,6 +1,6 @@
 {
   "name": "payload-auth0-plugin",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "main": "dist/strategies/index.js",
   "types": "dist/strategies/index.d.ts",
   "repository": "https://github.com/finkinfridom/payload-auth0-plugin.git",
