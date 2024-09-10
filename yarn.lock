@@ -19,10 +19,10 @@
     "@types/json-schema" "^7.0.15"
     js-yaml "^4.1.0"
 
-"@babel/cli@^7.24.8":
-  version "7.24.8"
-  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.24.8.tgz#79eaa55a69c77cafbea3e87537fd1df5a5a2edf8"
-  integrity sha512-isdp+G6DpRyKc+3Gqxy2rjzgF7Zj9K0mzLNnxz+E/fgeag8qT3vVulX4gY9dGO1q0y+0lUv6V3a+uhUzMzrwXg==
+"@babel/cli@^7.25.6":
+  version "7.25.6"
+  resolved "https://registry.yarnpkg.com/@babel/cli/-/cli-7.25.6.tgz#bc35561adc78ade43ac9c09a690768493ab9ed95"
+  integrity sha512-Z+Doemr4VtvSD2SNHTrkiFZ1LX+JI6tyRXAAOb4N9khIuPyoEPmTPJarPm8ljJV1D6bnMQjyHMWTT9NeKbQuXA==
   dependencies:
     "@jridgewell/trace-mapping" "^0.3.25"
     commander "^6.2.0"
@@ -33,7 +33,7 @@
     slash "^2.0.0"
   optionalDependencies:
     "@nicolo-ribaudo/chokidar-2" "2.1.8-no-fsevents.3"
-    chokidar "^3.4.0"
+    chokidar "^3.6.0"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.24.7":
   version "7.24.7"
@@ -3626,7 +3626,7 @@ charenc@0.0.2:
   resolved "https://registry.yarnpkg.com/charenc/-/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
   integrity sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==
 
-"chokidar@>=3.0.0 <4.0.0", chokidar@^3.4.0:
+"chokidar@>=3.0.0 <4.0.0", chokidar@^3.6.0:
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-3.6.0.tgz#197c6cc669ef2a8dc5e7b4d97ee4e092c3eb0d5b"
   integrity sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==
@@ -4029,10 +4029,10 @@ css-what@^6.0.1:
   resolved "https://registry.yarnpkg.com/css-what/-/css-what-6.1.0.tgz#fb5effcf76f1ddea2c81bdfaa4de44e79bac70f4"
   integrity sha512-HTUrgRJ7r4dsZKU6GjmpfRK1O76h97Z8MfS1G0FozR+oF2kG6Vfe8JE6zwrkbxigziPHinCJ+gCPjA9EaBDtRw==
 
-cssdb@^8.1.0:
-  version "8.1.0"
-  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-8.1.0.tgz#ad25cac6ac0dbc4f23693e09baa65cdd3ef7160a"
-  integrity sha512-BQN57lfS4dYt2iL0LgyrlDbefZKEtUyrO8rbzrbGrqBk6OoyNTQLF+porY9DrpDBjLo4NEvj2IJttC7vf3x+Ew==
+cssdb@^8.1.1:
+  version "8.1.1"
+  resolved "https://registry.yarnpkg.com/cssdb/-/cssdb-8.1.1.tgz#bb3ea0038a471c61fc89c56d11d168d62fac7829"
+  integrity sha512-kRbSRgZoxtZNl5snb3nOzBkFOt5AwnephcUTIEFc2DebKG9PN50/cHarlwOooTxYQ/gxsnKs3BxykhNLmfvyLg==
 
 cssesc@^3.0.0:
   version "3.0.0"
@@ -7114,10 +7114,10 @@ pause@0.0.1:
   resolved "https://registry.yarnpkg.com/pause/-/pause-0.0.1.tgz#1d408b3fdb76923b9543d96fb4c9dfd535d9cb5d"
   integrity sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg==
 
-payload@^2.27.0:
-  version "2.27.0"
-  resolved "https://registry.yarnpkg.com/payload/-/payload-2.27.0.tgz#18af5223f6b3e5ba869cb8f0f7a8794ca41af67c"
-  integrity sha512-SH75Sae1AfuczYK5vHGbIEVxKFmqUb2/LTEtBjh+sEc/I0R0y1KMfwojdXR6lXTrQCeG5ekLhfi1D5+CBjxezg==
+payload@^2.28.0:
+  version "2.28.0"
+  resolved "https://registry.yarnpkg.com/payload/-/payload-2.28.0.tgz#b33b9edba187e97632a0314445e5bbe689987656"
+  integrity sha512-DzSSUoG1pOiPQXSgoTqYar7naQ121kk6lRoxCPI6xQYv74z2hbGo4elgUSGLN6AHor0nU4egBenjaltZX82ELA==
   dependencies:
     "@date-io/date-fns" "2.16.0"
     "@dnd-kit/core" "6.0.8"
@@ -7528,10 +7528,10 @@ postcss-nesting@^13.0.0:
     "@csstools/selector-specificity" "^4.0.0"
     postcss-selector-parser "^6.1.0"
 
-postcss-opacity-percentage@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-opacity-percentage/-/postcss-opacity-percentage-2.0.0.tgz#c0a56060cd4586e3f954dbde1efffc2deed53002"
-  integrity sha512-lyDrCOtntq5Y1JZpBFzIWm2wG9kbEdujpNt4NLannF+J9c8CgFIzPa80YQfdza+Y+yFfzbYj/rfoOsYsooUWTQ==
+postcss-opacity-percentage@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/postcss-opacity-percentage/-/postcss-opacity-percentage-3.0.0.tgz#0b0db5ed5db5670e067044b8030b89c216e1eb0a"
+  integrity sha512-K6HGVzyxUxd/VgZdX04DCtdwWJ4NGLG212US4/LA1TLAbHgmAsTWVR86o+gGIbFtnTkfOpb9sCRBx8K7HO66qQ==
 
 postcss-overflow-shorthand@^6.0.0:
   version "6.0.0"
@@ -7552,10 +7552,10 @@ postcss-place@^10.0.0:
   dependencies:
     postcss-value-parser "^4.2.0"
 
-postcss-preset-env@^10.0.2:
-  version "10.0.2"
-  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-10.0.2.tgz#fb0a2e15eb06dbea4d8bf1945c177e8aa5953550"
-  integrity sha512-PMxqnz0RQYMUmUi6p4P7BhC9EVGyEUCIdwn4vJ7Fy1jvc2QP4mMH75BSBB1mBFqjl3x4xYwyCNMhGZ8y0+/qOA==
+postcss-preset-env@^10.0.3:
+  version "10.0.3"
+  resolved "https://registry.yarnpkg.com/postcss-preset-env/-/postcss-preset-env-10.0.3.tgz#e634f5d402521a66c61526c70bf265d331c4a183"
+  integrity sha512-1nrZ4IeBXEEj53IMoRKE+k/Ub6nQb3gFjaxTeyUNG5zv3JQclFDY5GKKhAi3nsa1lnPMWgzQX+/1y6wUt2+I7Q==
   dependencies:
     "@csstools/postcss-cascade-layers" "^5.0.0"
     "@csstools/postcss-color-function" "^4.0.2"
@@ -7592,7 +7592,7 @@ postcss-preset-env@^10.0.2:
     css-blank-pseudo "^7.0.0"
     css-has-pseudo "^7.0.0"
     css-prefers-color-scheme "^10.0.0"
-    cssdb "^8.1.0"
+    cssdb "^8.1.1"
     postcss-attribute-case-insensitive "^7.0.0"
     postcss-clamp "^4.1.0"
     postcss-color-functional-notation "^7.0.2"
@@ -7611,7 +7611,7 @@ postcss-preset-env@^10.0.2:
     postcss-lab-function "^7.0.2"
     postcss-logical "^8.0.0"
     postcss-nesting "^13.0.0"
-    postcss-opacity-percentage "^2.0.0"
+    postcss-opacity-percentage "^3.0.0"
     postcss-overflow-shorthand "^6.0.0"
     postcss-page-break "^3.0.4"
     postcss-place "^10.0.0"
@@ -9059,10 +9059,10 @@ type@^2.7.2:
   resolved "https://registry.yarnpkg.com/type/-/type-2.7.3.tgz#436981652129285cc3ba94f392886c2637ea0486"
   integrity sha512-8j+1QmAbPvLZow5Qpi6NCaN8FB60p/6x8/vfNqOk/hC+HuvFZhL4+WfekuhQLiqFZXOgQdrs3B+XxEmCc6b3FQ==
 
-typescript@5.5.4:
-  version "5.5.4"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.5.4.tgz#d9852d6c82bad2d2eda4fd74a5762a8f5909e9ba"
-  integrity sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==
+typescript@5.6.2:
+  version "5.6.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.6.2.tgz#d1de67b6bef77c41823f822df8f0b3bcff60a5a0"
+  integrity sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==
 
 undici-types@~5.26.4:
   version "5.26.5"
