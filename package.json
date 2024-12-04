@@ -23,7 +23,7 @@
     "core-js": "^3.38.0",
     "dotenv": "^16.1.1",
     "express-openid-connect": "^2.17.0",
-    "payload": "^2.30.3",
+    "payload": "^3.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -38,7 +38,7 @@
     "@babel/preset-react": "^7.25.7",
     "@babel/preset-typescript": "^7.25.7",
     "@parcel/transformer-typescript-types": "2.12.0",
-    "@types/express": "4.17.21",
+    "@types/express": "5.0.0",
     "@types/jest": "29.5.13",
     "@types/passport": "1.0.16",
     "@types/pino": "7.0.5",
