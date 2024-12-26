@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "core-js": "^3.38.0",
-    "dotenv": "^16.1.1",
+    "dotenv": "^16.4.7",
     "express-openid-connect": "^2.17.0",
     "payload": "^2.30.3",
     "react": "^18.2.0",
